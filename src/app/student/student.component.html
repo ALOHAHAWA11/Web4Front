@@ -1,0 +1,28 @@
+<div class="card group-card">
+  <div class="card-content">
+    <h3 class="title">Студенты группы</h3>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Дата рождения</th>
+        <th>Номер зачетки</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{student.name}}</td>
+        <td>{{student.birthdate.getDay()}}.{{student.birthdate.getMonth()}}.{{student.birthdate.getFullYear()}}</td>
+        <td>{{student.number}}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th>Имя</th>
+        <th>Дата рождения</th>
+        <th>Номер зачетки</th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

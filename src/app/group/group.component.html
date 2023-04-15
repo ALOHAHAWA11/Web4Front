@@ -1,0 +1,45 @@
+<div class="card group-card">
+  <div class="card-content">
+    <h3 class="title">Группы</h3>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Номер</th>
+        <th>Группа</th>
+        <th>Студенты</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let group of groups">
+        <td>{{get_index(group.name)}}</td>
+        <td>{{group.name}}</td>
+        <td><a [routerLink]="['/groups', group.name]">Просмотреть</a></td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th>Номер</th>
+        <th>Группа</th>
+        <th>Студенты</th>
+      </tr>
+      </tfoot>
+    </table>
+<!--    <div class="columns is-gapless is-centered">-->
+<!--      <div class="column is-one-quarter">-->
+<!--        <button class="button is-primary">-->
+<!--          <img style="width: 15px; height: 15px;" src="https://cdn-icons-png.flaticon.com/512/32/32339.png">-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="column is-one-quarter">-->
+<!--        <button class="button is-warning">-->
+<!--          <img style="width: 15px; height: 15px;" src="https://cdn-icons-png.flaticon.com/512/764/764599.png">-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="column is-one-quarter">-->
+<!--        <button class="button is-danger">-->
+<!--          <img style="width: 15px; height: 15px;" src="https://freesvg.org/img/trash.png">-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
+</div>
